@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+      text-align: center;
+      background: chartreuse;
+    } 
+    h2{
+        width: 50%;
+        margin-left: 25%;
+      text-align: center;
+      background: rgb(157, 116, 158);
+    }
+  </style>
+<body>
+    
+    <h1>Welcome to the website
+        <br>
+        present date:-{{presentDate | date}}
+    </h1>
+      
+    <div>
+    <h2>
+    <a routerLink="register" >Register</a>
+    <br>
+    <a routerLink='login'>Login</a>
+    <br>
+    <a routerLink='profile'>profile</a>
+    <router-outlet></router-outlet>
+    </h2>
+</div>
+</body>
+</html>
+
+

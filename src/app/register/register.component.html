@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+      text-align: center;
+      background: chartreuse;
+    } 
+    h2{
+        width: 50%;
+        margin-left: 25%;
+      text-align: center;
+      background: rgb(157, 116, 158);
+    }
+  </style>
+<body>
+    <h1>Register Here</h1>
+    <h2>
+    <label for="Username">Username:</label>
+    <input type=“text” id=“Username” [(ngModel)]='name'>
+
+    <br>
+    <label for="Password">Password</label>
+    <input type=“text” name=“password” [(ngModel)]='pass'>
+
+    <br>
+    <button (click)="submit()">Submit</button>
+    </h2>
+</body>
+</html>
+
+
+
